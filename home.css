@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.card{
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    padding: 10px;
+    
+}
+
+.bg-offWhite{
+    background-color: #F8FBFF;
+    
+}
+.custom{
+   position: absolute;
+   top: 530px;
+   left: 10%;
+   
+}
+
+.menu-bar{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    display: none;
+}
