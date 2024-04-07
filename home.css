@@ -19,14 +19,32 @@
 }
 .custom{
    position: absolute;
-   top: 530px;
+   top: 50%;
    left: 10%;
    
 }
 
 .menu-bar{
     position: absolute;
-    top: 200px;
-    left: 0px;
+    top: 10px;
+    right: 10px;
     display: none;
+}
+.brdr{
+    border-bottom: 1px solid black;
+}
+ul {
+    list-style-type: none;
+}
+.head-container{
+    position: relative;
+}
+.sec-child{
+    position: absolute;
+    top: 70%;
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+   .special-text{
+    font-size: 12px;
+   }
 }
