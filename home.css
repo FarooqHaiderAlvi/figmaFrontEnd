@@ -66,3 +66,8 @@ ul {
         margin-bottom: 450px;
     }
 }
+@media screen and (max-width:580px){
+    .table-responsive{
+       font-size: 10px;
+    }
+}
