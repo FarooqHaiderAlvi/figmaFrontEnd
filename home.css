@@ -19,8 +19,9 @@
 }
 .custom{
    position: absolute;
-   top: 50%;
-   left: 10%;
+   top: 90%;
+   width: 100%;
+
    
 }
 
@@ -39,12 +40,29 @@ ul {
 .head-container{
     position: relative;
 }
-.sec-child{
-    position: absolute;
-    top: 70%;
-}
+
 @media screen and (min-width: 768px) and (max-width: 1000px) {
    .special-text{
     font-size: 12px;
    }
+}
+
+.custom-margin{
+    margin-bottom:80px ;
+}
+
+
+@media screen and (max-width:768px){
+   .custom-margin{
+    margin-bottom: 430px;
+   }
+   .custom{
+    top: 105%;
+   }
+}
+
+@media screen and (max-width:454px){
+    .custom-margin{
+        margin-bottom: 450px;
+    }
 }
