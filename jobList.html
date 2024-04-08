@@ -11,73 +11,82 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-
+    <link rel="stylesheet" href="home.css">
+    <script src="menu.js"></script>
     <link rel="stylesheet" href="jobList.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="container-fluid " style="border: 1px solid red;">
-            <div class="row ">
-                <div class="col-7  border-1 bg-offWhite" style="height: 500px;">
+    <header class="pb-5">
+        <div class="container-fluid position-relative pb-2">
+            <div class="row bg-offWhite ">
+                <div class="col-7  border-1  ">
 
                     <div class="row justify-content-center ">
 
-                        <div class="col-8  mt-4">
+                        <div class="col-12 col-md-10 pt-3">
                             <img class="mb-5 img-fluid" src="contactImages/img2.png" alt="">
 
-                            <p style="color: #2B72EE;" class="mt-5 h1">Job List</p>
-                            <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                            <p style="color: #2B72EE;" class="h1">Job List</p>
+                            <p class="mt-1 head-btn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                            </p>
+
                         </div>
 
                     </div>
 
-
-
                 </div>
 
-                <div class="col-5"
-                    style="background-color: #2B72EE; height: 500px; background-image: url(contactImages/img3.png);">
 
-                    <nav class="ms-auto mt-4 navbar navbar-expand-lg  navbar-light ">
+                <div class="col-5" style="background-color: #2B72EE;  background-image: url(contactImages/img3.png);">
+
+                    <nav class="ms-auto mt-4 navbar navbar-expand-xl navbar-light ">
                         <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                            <button id="btn-toggle" class="ms-auto  navbar-toggler " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbaSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span>
+                                    <img src="homeImanges/img25.png" alt="">
+                                </span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                     <li class="nav-item mx-2">
-                                        <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                                        <a class="nav-link active text-white " aria-current="page"
+                                            href="home.html">Home</a>
                                     </li>
                                     <li class="nav-item mx-2">
-                                        <a class="nav-link  text-white" aria-current="page" href="#">About</a>
+                                        <a class="nav-link  text-white" aria-current="page" href="about.html">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link  text-white" aria-current="page" href="#">Job List</a>
+                                        <a class="nav-link  text-white" aria-current="page" href="jobList.html">Job
+                                            List</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link text-white" aria-current="page" href="#">Contact</a>
+                                        <a class="nav-link text-white" aria-current="page"
+                                            href="contact.html">Contact</a>
                                         <!-- <img src="contactImages/Vector 6.png" alt=""> -->
                                     </li>
                                     <li class="nav-item mx-3">
                                         <a style="border-top-left-radius: 10px; border-top-right-radius: 0px;"
-                                            class="nav-link active btn btn-light" aria-current="page" href="#">Get In
+                                            class="nav-link active btn btn-light" aria-current="page"
+                                            href="GetInTouch.html">Get In
                                             Touch</a>
                                     </li>
-
-
 
                                 </ul>
                             </div>
                         </div>
                     </nav>
-                    <div class="row mt-5">
-                        <div class="col-auto">
-                            <img src="contactImages/img1.png" alt="" class="img-fluid">
+                    <div class="row mt-3">
+                        <div class="col-auto mb-5">
+                            <img src="jobListImages/img1.png" alt="" class="img-fluid">
                         </div>
                     </div>
 
@@ -85,35 +94,70 @@
                 </div>
 
             </div>
+
+
+
+
+            <div id="menu-toggle" class="menu-bar navbar-toggler"
+                style="width: 200px; background-color: white; height: 300px;">
+                <p class="text-end">
+                    <button class="me-3 mt-3 btn btn-outline-primary" id="cross-toggle">
+                        X
+                    </button>
+                </p>
+
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <hr>
+                    <li><a href="about.html">About us</a></li>
+                    <hr>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <hr>
+                    <li><a href="jobList.html">Job List</a></li>
+                    <hr>
+                </ul>
+            </div>
+
+
+
         </div>
+
+
+
     </header>
 
 
-    <main class="mb-5">
+    <main class="mb-3">
 
-        <div class="container-fluid ">
-            <div class="row justify-content-center">
-                <div class="col-10">
+        <section>
 
-                    <p class="text-center h5 mt-3" style="color: #2B72EE;">Jobs Are Available</p>
 
-                    <p class="text-center h1 mt-2">Job Recommendations You Might Need</p>
 
-                    <p class="text-center">Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                        ridiculus mus. Nunc sollicitudin, odio nec cursus lobortis, nunc ipsum suscipit ante, nec
-                        tristique
-                        tortor felis ac urna. Vivamus laoreet lacus commodo magna tempus, vitae luctus neque sagittis.
-                    </p>
+            <div class="container-fluid ">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+
+                        <p class="text-center h5 mt-3" style="color: #2B72EE;">Jobs Are Available</p>
+
+                        <p class="text-center h1 mt-2">Job Recommendations You Might Need</p>
+
+                        <p class="text-center">Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Nunc sollicitudin, odio nec cursus lobortis, nunc ipsum suscipit ante, nec
+                            tristique
+                            tortor felis ac urna. Vivamus laoreet lacus commodo magna tempus, vitae luctus neque
+                            sagittis.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row mt-3 justify-content-center">
-                <div class="col-lg-12 ">
 
-                    <div class="container-fluid ">
 
-                        <div class="row justify-content-center">
-                            <div class="col-3 mx-lg-2 border card">
+                <div class="row mt-3 justify-content-center">
+                    <div class="col-lg-12 ">
+
+
+                        <div class="row justify-content-center gy-2">
+                            <div class="col-9 col-md-5 col-lg-3 mx-2 mx-lg-4 border card">
                                 <div class="row justify-content-center">
                                     <div class="col-10">
                                         <img src="jobListImages/img6.png" class="img-fluid" alt="">
@@ -148,7 +192,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 mx-lg-2 border card">
+                            <div class="col-9 col-md-5 col-lg-3 mx-2 mx-lg-4  border card">
                                 <div class="row justify-content-center">
                                     <div class="col-10">
                                         <img src="jobListImages/img7.png" class="img-fluid" alt="">
@@ -183,7 +227,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 mx-lg-2 border card">
+                            <div class="col-9 col-md-5 col-lg-3 mx-2 mx-lg-4  border card">
                                 <div class="row justify-content-center">
                                     <div class="col-10">
                                         <img src="jobListImages/img6.png" class="img-fluid" alt="">
@@ -218,10 +262,7 @@
                                 </div>
 
                             </div>
-
-                        </div>
-                        <div class="mt-3 row justify-content-center">
-                            <div class="col-3 mx-lg-2 border card">
+                            <div class="col-9 col-md-5 col-lg-3 mx-2 mx-lg-4 border card">
                                 <div class="row justify-content-center">
                                     <div class="col-10">
                                         <img src="jobListImages/img6.png" class="img-fluid" alt="">
@@ -256,7 +297,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 mx-lg-2 border card">
+                            <div class="col-9 col-md-5 col-lg-3 mx-2 mx-lg-4  border card">
                                 <div class="row justify-content-center">
                                     <div class="col-10">
                                         <img src="jobListImages/img7.png" class="img-fluid" alt="">
@@ -291,7 +332,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 mx-lg-2 border card">
+                            <div class="col-9 col-md-5 col-lg-3 mx-2 mx-lg-4  border card">
                                 <div class="row justify-content-center">
                                     <div class="col-10">
                                         <img src="jobListImages/img6.png" class="img-fluid" alt="">
@@ -326,10 +367,7 @@
                                 </div>
 
                             </div>
-
-                        </div>
-                        <div class="mt-3 row justify-content-center">
-                            <div class="col-3 mx-lg-2 border card">
+                            <div class="col-9 col-md-5 col-lg-3 mx-2 mx-lg-4 border card">
                                 <div class="row justify-content-center">
                                     <div class="col-10">
                                         <img src="jobListImages/img6.png" class="img-fluid" alt="">
@@ -364,7 +402,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 mx-lg-2 border card">
+                            <div class="col-9 col-md-5 col-lg-3 mx-2 mx-lg-4  border card">
                                 <div class="row justify-content-center">
                                     <div class="col-10">
                                         <img src="jobListImages/img7.png" class="img-fluid" alt="">
@@ -399,7 +437,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 mx-lg-2 border card">
+                            <div class="col-9 col-md-5 col-lg-3 mx-2 mx-lg-4  border card">
                                 <div class="row justify-content-center">
                                     <div class="col-10">
                                         <img src="jobListImages/img6.png" class="img-fluid" alt="">
@@ -437,104 +475,57 @@
 
                         </div>
 
+
+
                     </div>
 
-
-                </div>
-                <div class="mt-5 d-flex justify-content-center img-fluid"><img src="jobListImages/img9.png" alt="">
-                </div>
-            </div>
-
-            <div class="row  mt-5 justify-content-center">
-                <div class="col-10  ">
-                    <div class="row justify-content-between p-2 text-white" style="background-color: #2B72EE;">
-
-                        <div class="col-2 ">
-                            <p class="h2">125+</p>
-                            <p>New Job Vacancies</p>
-                        </div>
-                        <div class="col-2">
-                            <p class="h2">125+</p>
-                            <p>New Job Vacancies</p>
-                        </div>
-                        <div class="col-2">
-                            <p class="h2">125+</p>
-                            <p>New Job Vacancies</p>
-                        </div>
-                        <div class="col-2">
-                            <p class="h2">125+</p>
-                            <p>New Job Vacancies</p>
-                        </div>
-
+                    <div class="mt-5 d-flex justify-content-center img-fluid"><img src="jobListImages/img9.png" alt="">
                     </div>
                 </div>
+
+
             </div>
 
 
+        </section>
 
 
 
 
 
-        </div>
 
 
-        
-        <div class=" mt-3 container-fluid " style="background-color: #F8FBFF;">
-            <div class="row justify-content-center">
-                <div class="col-11">
 
-                    <div class="row align-items-center" style="background-image: url(jobListImages/img15.png);">
+        <section>
+            <div class="container-fluid">
+                <div class="row  mt-5 justify-content-center">
+                    <div class="col-10  ">
+                        <div class="row justify-content-center justify-content-md-between p-2 text-white"
+                            style="background-color: #2B72EE;">
 
-                        <div class="col-6 ">
-                            <div class="row justify-content-center">
-                                <div class=" col-auto align-self-center">
-                                    <img src="jobListImages/img11.png" alt="">
-                                </div>
-
-                                <div class="col-8 mt-4 card mb-5">
-                                    <p class="h2  text-center">”</p>
-                                    <p class="text-center ">
-                                        " Sed dignissim faucibus venenatis. Proin eu odio magna.
-                                        Nunc eget ex rhoncus, commodo sem sed, placerat est.
-                                        Donec id eleifend lectus "
-
-                                    </p>
-                                    <span
-                                        class="mt-3 position-absolute top-100 start-50 translate-middle badge rounded-pill">
-                                        <img src="jobListImages/img13.png" alt="">
-                                       
-                                    </span>
-
-                                </div>
-
-                                <div class="col-auto align-self-center">
-                                    <img src="jobListImages/img12.png" alt="">
-                                </div>
-                               
+                            <div class=" col-7 col-sm-5 col-md-2 ">
+                                <p class="h2 text-center">125+</p>
+                                <p class="text-center">New Job Vacancies</p>
                             </div>
-                            <div class="mt-3 row justify-content-center">
-                                <p class="text-center h5">Director</p>
-                                <img src="jobListImages/img16.png" style="height: 9px; width: 50px;" alt="">
+                            <div class=" col-7 col-sm-5 col-md-2  ">
+                                <p class="h2 text-center">740+</p>
+                                <p class="text-center">Satisfied User</p>
                             </div>
-                        
-                        </div>
-                       
-                        <div class="offset-1 col-4  ">
-                            <p class="h6 ">Testimonial</p>
-                            <p class="h2">What They Say</p>
-                            <p class="h2">About Us</p>
-                            <p class="text-start">Uniquely promote adaptive quality vectors rather than stand-
-                                alone e-markets. pontificate alternative architectures
-                                whereas iterate.</p>
-                        </div>
+                            <div class=" col-7 col-sm-5 col-md-2 ">
+                                <p class="h2 text-center">999+</p>
+                                <p class="text-center">New hirings</p>
+                            </div>
+                            <div class=" col-7 col-sm-5 col-md-2 ">
+                                <p class="h2 text-center">125+</p>
+                                <p class="text-center">New Job Vacancies</p>
+                            </div>
 
+                        </div>
                     </div>
-
-
                 </div>
             </div>
-        </div>
+
+        </section>
 
 
 
@@ -542,6 +533,74 @@
 
 
 
+
+
+
+
+
+
+
+
+        <section>
+            <div class=" mt-3 pb-3 container-fluid " style="background-color: #F8FBFF;">
+                <div class="row justify-content-center">
+                    <div class="col-11">
+
+                        <div class="row align-items-center justify-content-center"
+                            style="background-image: url(jobListImages/img15.png);">
+
+                            <div class="col-10  offset-md-1 col-md-4  ">
+                                <p class="h6" style="color: #2B72EE;">Testimonial</p>
+                                <p class="h2">What They Say</p>
+                                <p class="h2">About Us</p>
+                                <p class="text-start">Uniquely promote adaptive quality vectors rather than stand-
+                                    alone e-markets. pontificate alternative architectures
+                                    whereas iterate.</p>
+                            </div>
+
+                            <div class="col-10 offset-md-1 col-md-6 ">
+                                <div class="row justify-content-center">
+                                    <div class=" col-auto align-self-center">
+                                        <img src="jobListImages/img11.png" alt="">
+                                    </div>
+
+                                    <div class="col-8 mt-4 card mb-5">
+                                        <p class="h2  text-center">”</p>
+                                        <p class="text-center ">
+                                            " Sed dignissim faucibus venenatis. Proin eu odio magna.
+                                            Nunc eget ex rhoncus, commodo sem sed, placerat est.
+                                            Donec id eleifend lectus "
+
+                                        </p>
+                                        <span
+                                            class="mt-3 position-absolute top-100 start-50 translate-middle badge rounded-pill">
+                                            <img src="jobListImages/img13.png" alt="">
+
+                                        </span>
+
+                                    </div>
+
+                                    <div class="col-auto align-self-center">
+                                        <img src="jobListImages/img12.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="mt-3 row justify-content-center">
+                                    <p class="text-center h5">Director</p>
+                                    <img src="jobListImages/img16.png" style="height: 9px; width: 50px;" alt="">
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
