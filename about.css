@@ -17,3 +17,73 @@
     background-color: #F8FBFF;
     
 }
+.prog-1{
+    position: absolute;
+    right: 12%;
+}
+.prog-2{
+    position: absolute;
+    right: 21%;
+}
+.prog-3{
+    position: absolute;
+    right: 17%;
+}
+.prog-4{
+    position: absolute;
+    right: 8%;
+}
+
+@media screen and (min-width: 768px) {
+    .prog-1{
+        top: 53%;
+        right: 12%;
+    }
+    .prog-2{
+        top: 67%;
+    }
+    .prog-3{
+        top: 80%;
+      }
+      .prog-4{
+        top: 82%;
+      }
+}
+@media screen and (min-width: 992px) {
+    .prog-1{
+        top: 51%;
+    }
+    .prog-2{
+        top: 65%;
+    }
+    .prog-3{
+      top: 80%;
+    }
+    .prog-4{
+       top: 94%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .prog-1{
+        top: 47%;
+     
+    }
+    .prog-2{
+        top: 63%;
+    }
+    .prog-3{
+        top: 79%;
+    }
+    .prog-4{
+        top: 93%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .prog-1{
+        top: 50%;
+    }
+    .prog-2{
+        top: 65%;
+    }
+}

@@ -13,70 +13,80 @@
     <link rel="stylesheet" href="contact.css">
     <!-- social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="men"></script>
 </head>
 
 <body>
 
-    <header>
-        <div class="container-fluid " style="border: 1px solid red;">
-            <div class="row ">
-                <div class="col-7  border-1 bg-offWhite" style="height: 500px;">
+    <header class="pb-5">
+        <div class="container-fluid position-relative pb-2">
+            <div class="row bg-offWhite ">
+                <div class="col-7  border-1  ">
 
                     <div class="row justify-content-center ">
 
-                        <div class="col-8  mt-4">
-                            <img class="mb-5 img-fluid" src="contactImages/img2.png"  alt="">
+                        <div class="col-12 col-md-10 pt-3">
+                            <img class="mb-5 img-fluid" src="contactImages/img2.png" alt="">
 
-                            <p style="color: #2B72EE;" class="mt-5 h1">Contact</p>
-                            <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                            <p style="color: #2B72EE;" class="h1">Contact</p>
+                            <p class="mt-1 head-btn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                            </p>
+
                         </div>
 
                     </div>
 
-
-
                 </div>
 
-                <div class="col-5"
-                    style="background-color: #2B72EE; height: 500px; background-image: url(contactImages/img3.png);">
 
-                    <nav class="ms-auto mt-4 navbar navbar-expand-lg  navbar-light ">
+                <div class="col-5" style="background-color: #2B72EE;  background-image: url(contactImages/img3.png);">
+
+                    <nav class="ms-auto mt-4 navbar navbar-expand-xl navbar-light ">
                         <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                            <button id="btn-toggle" class="ms-auto  navbar-toggler " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbaSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span>
+                                    <img src="homeImanges/img25.png" alt="">
+                                </span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                     <li class="nav-item mx-2">
-                                        <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                                        <a class="nav-link active text-white " aria-current="page"
+                                            href="home.html">Home</a>
                                     </li>
                                     <li class="nav-item mx-2">
-                                        <a class="nav-link  text-white" aria-current="page" href="#">About</a>
+                                        <a class="nav-link  text-white" aria-current="page" href="about.html">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link  text-white" aria-current="page" href="#">Job List</a>
+                                        <a class="nav-link  text-white" aria-current="page" href="jobList.html">Job
+                                            List</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link text-white" aria-current="page" href="#">Contact</a>
+                                        <a class="nav-link text-white" aria-current="page"
+                                            href="contact.html">Contact</a>
                                         <!-- <img src="contactImages/Vector 6.png" alt=""> -->
                                     </li>
                                     <li class="nav-item mx-3">
                                         <a style="border-top-left-radius: 10px; border-top-right-radius: 0px;"
-                                            class="nav-link active btn btn-light" aria-current="page" href="#">Get In
+                                            class="nav-link active btn btn-light" aria-current="page"
+                                            href="GetInTouch.html">Get In
                                             Touch</a>
                                     </li>
-
-
 
                                 </ul>
                             </div>
                         </div>
                     </nav>
-                    <div class="row mt-5">
-                        <div class="col-auto">
+                    <div class="row mt-3">
+                        <div class="col-auto mb-5">
                             <img src="contactImages/img5.png" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -85,58 +95,121 @@
                 </div>
 
             </div>
+
+
+
+
+            <div id="menu-toggle" class="menu-bar navbar-toggler"
+                style="width: 200px; background-color: white; height: 300px;">
+                <p class="text-end">
+                    <button class="me-3 mt-3 btn btn-outline-primary" id="cross-toggle">
+                        X
+                    </button>
+                </p>
+
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <hr>
+                    <li><a href="about.html">About us</a></li>
+                    <hr>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <hr>
+                    <li><a href="jobList.html">Job List</a></li>
+                    <hr>
+                </ul>
+            </div>
+
+
+
         </div>
+
+
+
     </header>
 
 
     <main>
 
         <section>
-            <div class="container-fluid mb-3" style=" border: 2px solid green;">
-                <div class="row ">
-                    <div class="offset-1 col-5 ">
+            <div class="container-fluid mb-3">
+                <div class="row justify-content-center">
+                    <div class=" col-10 col-lg-5 ">
 
                         <h4 style="color: #2B72EE;" class="mt-md-4">Get In Touch</h4>
                         <h2>Don't Hesitate</h2>
                         <h2>To ask a Question</h2>
 
-                        <p>
+                        <p class="">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                         </p>
 
 
-                        <div class="row bg-light align-items-center ">
-                            <div class="col-1">
-                                <i class="fa fa-address-book-o"></i>
+
+
+                        <div class="row gy-2">
+                            <div class="col-10 col-sm-6 ">
+                                <div class="row">
+
+                                    <div class="col-1">
+                                        <img src="jobListImages/img17.png" alt="" >
+                                    </div>
+                                    <div class="col-10">Address</div>
+                                    <div class="offset-1 col-auto">
+                                      457 Morningview Lane, NY
+                                    </div>
+
+                                </div>
+                               
                             </div>
-                            <div class="col-2">Address</div>
-                            <div class="offset-5 col-1">
-                                <i class="fa fa-address-book-o"></i>
+                            <div class="col-10 col-sm-5  ms-sm-2">
+                                <div class="row">
+
+                                    <div class="col-1">
+                                        <img src="jobListImages/img17.png" alt="" >
+                                    </div>
+                                    <div class="col-10">Address</div>
+                                    <div class="offset-1 col-auto">
+                                      457 Morningview 
+                                    </div>
+
+                                </div>
+                               
                             </div>
-                            <div class="col-2">Website</div>
+                            <div class="col-10 col-sm-6 ">
+                                <div class="row">
+
+                                    <div class="col-1">
+                                        <img src="jobListImages/img17.png" alt="" >
+                                    </div>
+                                    <div class="col-10">Address</div>
+                                    <div class="offset-1 col-auto">
+                                      457 Morningview Lane, NY
+                                    </div>
+
+                                </div>
+                               
+                            </div>
+                            <div class="col-10 col-sm-5 ms-sm-2">
+                                <div class="row">
+
+                                    <div class="col-1">
+                                        <img src="jobListImages/img17.png" alt="" >
+                                    </div>
+                                    <div class="col-10">Contact</div>
+                                    <div class="offset-1 col-auto">
+                                      +1 (418) 345-2376
+                                    </div>
+
+                                </div>
+                               
+                            </div>
+
                         </div>
 
-                        <div class="row">
-                            <div class="col-7 border border-3 offset-1">457 Morningview Lane, NY</div>
-                            <div class="col-3 offset-1 border border-3">calfinity.com</div>
-                        </div>
 
-                        <div class="row bg-light align-items-center mt-5 ">
-                            <div class="col-1">
-                                <i class="fa fa-address-book-o"></i>
-                            </div>
-                            <div class="col-2">Address</div>
-                            <div class="offset-5 col-1">
-                                <i class="fa fa-address-book-o"></i>
-                            </div>
-                            <div class="col-2">Website</div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-7 border border-3 offset-1">457 Morningview Lane, NY</div>
-                            <div class="col-3 offset-1 border border-3">calfinity.com</div>
-                        </div>
+
 
 
                     </div>
@@ -144,34 +217,41 @@
 
                     <!-- input form area -->
 
-                    <div class="offset-1 col-4 mt-5">
+                    <div class="offset-md-1 col-10 col-md-6 col-lg-4 mt-5  ">
 
                         <div class="row justify-content-md-between ">
 
                             <div class="col-6">
-                                <input style="border: 1px solid #2B72EE;" type="text" id="" class="form-control"
+                               
+                                <input style="border: 1px solid #2B72EE;" type="text" id="fname" class="form-control"
                                     placeholder="First name">
                             </div>
                             <div class="col-6">
+                              
                                 <input style="border: 1px solid #2B72EE;" type="text" id="" class="form-control"
                                     placeholder="Last name">
                             </div>
 
                         </div>
                         <div class="col mt-4">
-                            <input style="border: 1px solid #2B72EE;" type="text" class="form-control"
-                                placeholder="Third Name">
+                         
+                            <input style="border: 1px solid #2B72EE;" type="text" id="email" class="form-control"
+                                placeholder="Email">
                         </div>
-                        <div class="col mt-4">
+                        <div class="col mt-2">
+                            
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                                 style="height: 150px"></textarea>
                         </div>
-                        <button type="button" class="mt-2 btn btn-primary">Submit</button>
+                        <div class="col-auto align-self-center">
+                            <button type="button" class="btn  btn-primary mt-2 ">Send Message</button>
+                        </div>
 
                     </div>
                 </div>
             </div>
         </section>
+
 
         <section>
             <img src="contactImages/Rectangle 98.png" class="img-fluid" alt="">
